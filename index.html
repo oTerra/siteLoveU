@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Entrar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 100px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .container h2 {
+      text-align: center;
+    }
+    .container input[type="text"],
+    .container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    .container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #8a0202;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .container input[type="submit"]:hover {
+    width: 100%;
+      background-color: #8a3737;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>E agora, qual é a senha?</h2>
+      <input type="password" name="password" id="password" placeholder="Dica: Figurinha" required>
+      <input type="submit" value="Entrar" onclick="logar(); return false">
+    </form>
+  </div>
+
+  <script>
+ 
+    function logar(){
+    var senha = document.getElementById('password').value;
+        if(senha == "bomdiaevaitomarnocu") {
+            location.href = "home.html"
+        }else{
+            alert('senha incorreta')
+        }
+    }
+  </script>
+</body>
+</html>
